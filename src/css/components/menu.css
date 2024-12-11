@@ -1,0 +1,94 @@
+.menu {
+    visibility: hidden;
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background-color: #252525;
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 120px 40px 40px;
+    transform: translateX(100vw);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu[aria-hidden="false"] {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.menu__link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+}
+
+.menu__link--silent {
+    color: #7b7b7b;
+    font-size: 0.875rem;
+}
+
+.menu__item {
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.menu__social-network,
+.menu__terms {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.menu-btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
+    content: "";
+    background: black;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    border-radius: 2px;
+    left: 0;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-btn__bar::before {
+    top: -10px;
+}
+
+.menu-btn__bar::after {
+    top: 10px;
+}
+
+/* Technique pour transformer les 3 barres du bouton de menu en croix
+Ne pas oublier d'ajouter une transition plus haut pour l'animation */
+.menu-btn[aria-expanded="true"] .menu-btn__bar,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::before,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+    transform: rotate(135deg);
+    background: white;
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar::before,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+    transform: rotate(90deg);
+    top: 0;
+}

@@ -3,10 +3,10 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
+- NOM : TOUITOU
+- PRÉNOM : Ethan
+- GROUPE : C2
+- URL du site : 
 - URL FIGMA :
 
 ## Sujet
