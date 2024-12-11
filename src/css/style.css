@@ -1,4 +1,8 @@
+/*components */
 @import "components/menu.css";
 
 /* layout */
-@import "layout/header.css"
+@import "layout/header.css";
+
+/*main */
+@import "base/main.css";

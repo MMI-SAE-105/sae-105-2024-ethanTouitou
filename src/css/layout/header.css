@@ -1,13 +1,48 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
+    /* Aligne verticalement les éléments */
     background: linear-gradient(rgba(0, 40, 85, 0.8), rgba(0, 40, 85, 0.8)),
-        url('votre-image.jpg') center/cover no-repeat;
-    /* Image de fond */
+        url('/assets/img/hd1hp1.avif') center/cover no-repeat;
     color: white;
-    padding: 20px;
+    /* Espacement interne */
     height: 200px;
-    /* Hauteur ajustable selon vos besoins */
     position: relative;
+    width: 100%;
+    /* Assure que le header reste dans les limites de l’écran */
+    overflow: hidden;
+    /* Empêche les débordements */
+    padding-left: 20px;
+}
+
+/* Style pour le logo */
+.header__logo {
+    font-size: 1.5rem;
+    /* Taille du texte */
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Style en majuscules */
+    letter-spacing: 2px;
+    /* Espacement entre les lettres */
+    color: white;
+    /* Couleur du texte */
+    padding-top: 15px;
+}
+
+/* Positionnement du bouton menu */
+.header__menu-btn {
+    position: absolute;
+    top: 20px;
+    /* Distance du haut */
+    right: 20px;
+    /* Distance du côté droit */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }

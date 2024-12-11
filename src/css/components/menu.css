@@ -60,7 +60,7 @@
 .menu-btn__bar::before,
 .menu-btn__bar::after {
     content: "";
-    background: black;
+    background: white;
     height: 2px;
     width: 100%;
     position: absolute;
