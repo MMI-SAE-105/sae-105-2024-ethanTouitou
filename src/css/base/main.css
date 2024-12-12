@@ -12,4 +12,5 @@ html {
     /* Assure que le contenu s'adapte à la largeur de l'écran */
     overflow-x: hidden;
     /* Empêche tout débordement horizontal */
+    background-color: #f5f9ff;
 }

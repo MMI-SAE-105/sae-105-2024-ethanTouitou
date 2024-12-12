@@ -5,6 +5,7 @@
 @import "components/menu.css";
 @import "components/carousel.css";
 @import "components/button.css";
+@import "components/card.css";
 /* layout */
 @import "layout/header.css";
 @import "layout/footer.css";

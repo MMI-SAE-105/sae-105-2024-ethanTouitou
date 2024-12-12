@@ -1,0 +1,55 @@
+.card {
+    background: white;
+    /* Fond blanc */
+    border-radius: 10px;
+    /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
+    margin: 20px auto;
+    /* Centre la carte et ajoute de l'espace */
+    max-width: 500px;
+    /* Largeur maximale */
+    overflow: hidden;
+    /* Masque les débordements */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Card Image */
+.card-image img {
+    width: 100%;
+    /* L'image occupe toute la largeur */
+    height: auto;
+    /* Maintient les proportions */
+    display: block;
+    object-fit: cover;
+    /* S'assure que l'image est bien cadrée */
+}
+
+/* Card Content */
+.card-content {
+    padding: 20px;
+    text-align: left;
+    /* Aligne le texte à gauche */
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1rem;
+    /* Taille du titre */
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    /* Texte en gras */
+    margin: 0 0 10px 0;
+    /* Espace sous le titre */
+    color: #002855;
+    /* Bleu foncé */
+}
+
+/* Card Subtitle */
+.card-subtitle {
+    font-size: 1rem;
+    /* Taille du sous-titre */
+    color: #444;
+    /* Gris pour le texte */
+    margin: 0;
+}
