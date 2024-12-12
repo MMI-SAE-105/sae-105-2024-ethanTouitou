@@ -1,0 +1,97 @@
+/* Footer Styles */
+.footer {
+    background-color: #003f72;
+    /* Couleur bleu foncé */
+    color: white;
+    /* Texte blanc */
+    padding: 20px;
+    /* Espacement autour du footer */
+    display: flex;
+    justify-content: center;
+    /* Centre le contenu horizontalement */
+    align-items: flex-start;
+    font-family: 'Arial', sans-serif;
+    /* Police simple */
+    font-size: 1rem;
+    padding-bottom: 60px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    /* Espacement entre les colonnes */
+    align-items: flex-start;
+    width: 100%;
+    /* Prend toute la largeur */
+    max-width: 900px;
+    /* Limite la largeur totale */
+    flex-wrap: wrap;
+    /* Permet de passer à la ligne sur petits écrans */
+}
+
+.footer__logo {
+    font-family: 'Bungee', cursive;
+    font-size: 1.5rem;
+    /* Taille légèrement augmentée pour le logo */
+    font-weight: bold;
+    /* Style gras pour le logo */
+    text-transform: uppercase;
+    /* Texte en majuscules */
+    margin-bottom: 20px;
+    /* Ajoute de l'espace en dessous sur mobile */
+    text-align: center;
+    /* Centre le logo sur mobile */
+    width: 100%;
+    /* Le logo occupe toute la largeur */
+}
+
+.footer__left,
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    /* Les éléments sont empilés verticalement */
+    gap: 10px;
+    /* Espacement entre les lignes */
+    flex: 1;
+    /* Les sections s'adaptent à la largeur */
+    text-align: center;
+    /* Centre le texte sur petits écrans */
+}
+
+.footer__left p,
+.footer__right p {
+    margin: 0;
+    font-size: 1rem;
+    /* Taille du texte */
+}
+
+.footer__right p:first-child {
+    font-weight: bold;
+    /* Titre "ADRESSE" en gras */
+}
+
+/* Responsive: Petits écrans */
+@media (max-width: 600px) {
+    .footer__content {
+        flex-direction: column;
+        /* Passe à une seule colonne */
+        align-items: center;
+        /* Centre les éléments */
+    }
+
+    .footer__logo {
+        font-size: 1rem;
+        /* Réduit la taille du logo */
+    }
+
+    .footer__left,
+    .footer__right {
+        text-align: center;
+        /* Centre le texte */
+        width: 100%;
+        /* Les sections prennent toute la largeur */
+        margin-top: 10px;
+        /* Ajoute de l'espace entre les sections */
+        margin-bottom: 30px;
+    }
+}
