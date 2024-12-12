@@ -34,6 +34,7 @@
 
 /* Card Title */
 .card-title {
+    text-align: center;
     font-size: 1rem;
     /* Taille du titre */
     font-family: 'poppins', sans-serif;
