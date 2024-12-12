@@ -14,8 +14,11 @@
     /* Police simple */
     font-size: 1rem;
     padding-bottom: 60px;
+    flex-direction: column;
+    /* Passe le contenu en colonne */
 }
 
+/* Contenu principal du footer */
 .footer__content {
     display: flex;
     justify-content: space-between;
@@ -29,6 +32,7 @@
     /* Permet de passer à la ligne sur petits écrans */
 }
 
+/* Logo */
 .footer__logo {
     font-family: 'Bungee', cursive;
     font-size: 1.5rem;
@@ -45,6 +49,7 @@
     /* Le logo occupe toute la largeur */
 }
 
+/* Colonnes gauche et droite */
 .footer__left,
 .footer__right {
     display: flex;
@@ -70,6 +75,39 @@
     /* Titre "ADRESSE" en gras */
 }
 
+/* Réseaux sociaux */
+.footer__social {
+    display: flex;
+    justify-content: center;
+    /* Centre les icônes horizontalement */
+    gap: 20px;
+    /* Espacement entre les icônes */
+    margin-top: 20px;
+}
+
+.footer__social a {
+    text-decoration: none;
+    /* Supprime le soulignement */
+}
+
+.footer__social img {
+    display: flex;
+    justify-content: center;
+    /* Centre les icônes horizontalement */
+    align-items: center;
+    /* Centre les icônes verticalement */
+    gap: 20px;
+    /* Espacement entre les icônes */
+    margin-top: 20px;
+}
+
+.footer__social img:hover {
+    transform: scale(1.2);
+    /* Agrandit légèrement au survol */
+    opacity: 0.8;
+    /* Réduit légèrement l'opacité */
+}
+
 /* Responsive: Petits écrans */
 @media (max-width: 600px) {
     .footer__content {
@@ -93,5 +131,17 @@
         margin-top: 10px;
         /* Ajoute de l'espace entre les sections */
         margin-bottom: 30px;
+    }
+
+    .footer__social {
+        margin-top: 15px;
+        gap: 15px;
+        /* Réduit l'espacement entre les icônes */
+    }
+
+    .footer__social img {
+        width: 30px;
+        /* Réduit la taille des icônes sur petits écrans */
+        height: 30px;
     }
 }
