@@ -1,16 +1,10 @@
 .carrousel {
-    .carrousel {
-        position: relative;
-        /* Le carrousel reste positionné par rapport à son parent */
-        max-width: 300px;
-        /* Largeur réduite du carrousel */
-        margin: auto;
-        padding-top: 20px;
-        z-index: 10;
-        /* Place le carrousel au-dessus du header */
-        transform: translateY(-50%);
-        /* Fait remonter le carrousel sur le header */
-    }
+    position: relative;
+    max-width: 300px;
+    /* Réduit la largeur maximale du carrousel */
+    margin: auto;
+    padding-top: 20px;
+    /* Ajustement du padding */
 }
 
 .carrousel_parent-ecrans {

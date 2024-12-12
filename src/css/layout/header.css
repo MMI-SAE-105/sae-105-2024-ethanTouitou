@@ -73,3 +73,7 @@
     line-height: 1.2;
     margin: 0;
 }
+
+.header__content {
+    z-index: 10;
+}
