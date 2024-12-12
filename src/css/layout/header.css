@@ -7,17 +7,21 @@
         url('/assets/img/hd1hp1.avif') center/cover no-repeat;
     color: white;
     /* Espacement interne */
-    height: 200px;
+    height: 350px;
     position: relative;
     width: 100%;
     /* Assure que le header reste dans les limites de l’écran */
     overflow: hidden;
     /* Empêche les débordements */
     padding-left: 20px;
+    border-bottom-left-radius: 20%;
+    position: relative;
+    z-index: 5;
 }
 
 /* Style pour le logo */
 .header__logo {
+    font-family: 'Bungee', cursive;
     font-size: 1.5rem;
     /* Taille du texte */
     font-weight: bold;
@@ -37,7 +41,6 @@
     /* Distance du haut */
     right: 20px;
     /* Distance du côté droit */
-    width: 40px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -45,4 +48,28 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+.header__overlay-text {
+    position: absolute;
+    bottom: 40%;
+    /* Positionnement du texte en bas */
+    left: 10%;
+    /* Ajustez selon votre design */
+    color: white;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+    /* Ombre pour une meilleure lisibilité */
+    z-index: 2;
+    /* Place le texte au-dessus de l'image */
+    width: 80%;
+    /* Limite la largeur du texte */
+    padding-right: 40%;
+}
+
+.header__overlay-text p {
+    font-family: roboto;
+    font-size: 0.8rem;
+    /* Taille du paragraphe */
+    line-height: 1.2;
+    margin: 0;
 }

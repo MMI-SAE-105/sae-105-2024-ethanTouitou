@@ -1,0 +1,89 @@
+.carrousel {
+    .carrousel {
+        position: relative;
+        /* Le carrousel reste positionné par rapport à son parent */
+        max-width: 300px;
+        /* Largeur réduite du carrousel */
+        margin: auto;
+        padding-top: 20px;
+        z-index: 10;
+        /* Place le carrousel au-dessus du header */
+        transform: translateY(-50%);
+        /* Fait remonter le carrousel sur le header */
+    }
+}
+
+.carrousel_parent-ecrans {
+    display: flex;
+    width: 100%;
+    /* S'adapte à la largeur du parent */
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 10px;
+    /* Réduction de la marge inférieure */
+    height: 180px;
+    /* Réduction de la hauteur du carrousel */
+}
+
+.carrousel_ecran {
+    width: 100%;
+    flex: none;
+    scroll-snap-align: start;
+    display: grid;
+    place-items: center;
+}
+
+.carrousel_ecran figure {
+    margin: 0;
+}
+
+.carrousel_ecran_img {
+    width: 280px;
+    /* Réduit la largeur des images */
+    height: 160px;
+    /* Réduction de la hauteur pour s'adapter */
+    border-radius: 10px;
+    /* Coins arrondis inchangés */
+    object-fit: cover;
+    /* Garde les proportions de l'image */
+}
+
+.carrousel_btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    /* Boutons plus petits */
+    height: 1.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-content: center;
+    color: #fff;
+    font-size: 1rem;
+    /* Réduction de la taille de la police */
+}
+
+.carrousel_btn-avant {
+    left: 5px;
+    /* Ajustement pour un espacement réduit */
+}
+
+.carrousel_btn-apres {
+    right: 5px;
+    /* Ajustement pour un espacement réduit */
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.875rem;
+    /* Réduit la taille du texte */
+    font-family: var(--font-website);
+    font-weight: 500;
+    color: var(--black);
+    text-align: center;
+    padding-bottom: 10px;
+    /* Réduction de l'espacement */
+}
