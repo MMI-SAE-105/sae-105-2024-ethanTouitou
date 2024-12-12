@@ -54,3 +54,40 @@
     /* Gris pour le texte */
     margin: 0;
 }
+
+.card-footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f5f9ff;
+    /* Fond légèrement contrasté */
+    border-top: 1px solid #e0e0e0;
+    /* Ligne pour séparer le footer */
+}
+
+/* Bouton Voir Plus */
+.card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFCC00;
+    /* Jaune pour le bouton */
+    color: #000000;
+    /* Texte noir */
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    /* Supprime le soulignement */
+    border-radius: 5px;
+    /* Coins arrondis */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Transition pour le survol */
+}
+
+/* Effet de survol pour le bouton */
+.card-button:hover {
+    background-color: #FF9900;
+    /* Jaune plus foncé au survol */
+    transform: translateY(-2px);
+    /* Légère remontée */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Ajoute une ombre */
+}
