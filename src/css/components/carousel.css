@@ -1,23 +1,22 @@
+/* Carrousel - Général */
 .carrousel {
     position: relative;
-    max-width: 300px;
-    /* Réduit la largeur maximale du carrousel */
+    max-width: 600px;
+    /* Largeur maximale pour les grands écrans */
     margin: auto;
     padding-top: 20px;
-    /* Ajustement du padding */
 }
 
 .carrousel_parent-ecrans {
     display: flex;
     width: 100%;
-    /* S'adapte à la largeur du parent */
+    /* Toujours adaptatif à la largeur du parent */
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    margin-bottom: 10px;
-    /* Réduction de la marge inférieure */
-    height: 180px;
-    /* Réduction de la hauteur du carrousel */
+    margin-bottom: 20px;
+    height: 300px;
+    /* Hauteur par défaut pour les grands écrans */
 }
 
 .carrousel_ecran {
@@ -33,51 +32,101 @@
 }
 
 .carrousel_ecran_img {
-    width: 280px;
-    /* Réduit la largeur des images */
-    height: 160px;
-    /* Réduction de la hauteur pour s'adapter */
+    width: 500px;
+    /* Taille par défaut des images */
+    height: 280px;
+    /* Hauteur par défaut */
     border-radius: 10px;
-    /* Coins arrondis inchangés */
     object-fit: cover;
-    /* Garde les proportions de l'image */
 }
 
+/* Boutons du carrousel */
 .carrousel_btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 1.5rem;
-    /* Boutons plus petits */
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     border: none;
     display: grid;
     place-content: center;
     color: #fff;
-    font-size: 1rem;
-    /* Réduction de la taille de la police */
+    font-size: 1.25rem;
 }
 
 .carrousel_btn-avant {
-    left: 5px;
-    /* Ajustement pour un espacement réduit */
+    left: 10px;
 }
 
 .carrousel_btn-apres {
-    right: 5px;
-    /* Ajustement pour un espacement réduit */
+    right: 10px;
 }
 
 figcaption {
     text-align: center;
-    font-size: 0.875rem;
-    /* Réduit la taille du texte */
+    font-size: 1rem;
     font-family: var(--font-website);
     font-weight: 500;
     color: var(--black);
-    text-align: center;
-    padding-bottom: 10px;
-    /* Réduction de l'espacement */
+    padding-bottom: 15px;
+}
+
+/* --- RESPONSIVE STYLES --- */
+@media (max-width: 768px) {
+    .carrousel {
+        max-width: 90%;
+        /* Prend 90% de la largeur de l'écran */
+    }
+
+    .carrousel_parent-ecrans {
+        height: 220px;
+        /* Réduit la hauteur pour les tablettes et petits écrans */
+    }
+
+    .carrousel_ecran_img {
+        width: 100%;
+        /* Les images occupent toute la largeur du parent */
+        height: 200px;
+        /* Hauteur réduite */
+    }
+
+    .carrousel_btn {
+        width: 1.5rem;
+        /* Boutons plus petits */
+        height: 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .carrousel {
+        max-width: 100%;
+        /* Prend toute la largeur disponible */
+    }
+
+    .carrousel_parent-ecrans {
+        height: 180px;
+        /* Réduit encore la hauteur pour les très petits écrans */
+    }
+
+    .carrousel_ecran_img {
+        width: 100%;
+        /* Les images occupent toute la largeur */
+        height: 150px;
+        /* Hauteur ajustée */
+    }
+
+    .carrousel_btn {
+        width: 1.2rem;
+        /* Boutons encore plus petits */
+        height: 1.2rem;
+        font-size: 0.875rem;
+    }
+
+    figcaption {
+        font-size: 0.875rem;
+        /* Réduit la taille du texte sous l'image */
+    }
 }

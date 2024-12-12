@@ -1,0 +1,19 @@
+.button {
+    background-color: #FF9900;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #FF7700;
+    transform: translateY(-5px);
+    /* Légère remontée pour l'effet dynamique */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Ajout d'une ombre */
+}
