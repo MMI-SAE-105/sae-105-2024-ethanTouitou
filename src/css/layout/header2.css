@@ -1,0 +1,64 @@
+/* Header principal */
+.main-header {
+    background-color: #003f72;
+    /* Bleu foncé */
+    display: flex;
+    justify-content: space-between;
+    /* Écarte les éléments (logo et menu) */
+    align-items: center;
+    /* Aligne les éléments verticalement au centre */
+    padding: 10px 20px;
+    font-family: 'Bungee', cursive;
+    color: white;
+    height: 80px;
+    /* Hauteur du header */
+}
+
+/* Logo du header */
+.main-header__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Bouton du menu (inchangé) */
+.header__menu-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #004a80;
+    /* Fond bleu légèrement plus foncé */
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__menu-btn .menu-btn__bar {
+    width: 25px;
+    height: 2px;
+    background: white;
+    position: relative;
+}
+
+.header__menu-btn .menu-btn__bar::before,
+.header__menu-btn .menu-btn__bar::after {
+    content: '';
+    width: 25px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+}
+
+.header__menu-btn .menu-btn__bar::before {
+    top: -8px;
+    /* Distance entre la barre du milieu et celle du haut */
+}
+
+.header__menu-btn .menu-btn__bar::after {
+    top: 8px;
+    /* Distance entre la barre du milieu et celle du bas */
+}

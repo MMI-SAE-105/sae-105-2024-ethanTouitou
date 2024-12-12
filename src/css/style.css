@@ -10,6 +10,7 @@
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "layout/section.css";
+@import "layout/header2.css";
 
 /*main */
 @import "base/main.css";
