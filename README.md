@@ -6,8 +6,8 @@
 - NOM : TOUITOU
 - PRÉNOM : Ethan
 - GROUPE : C2
-- URL du site : 
-- URL FIGMA :
+- URL du site : remarkable-salamander-af8baa.netlify.app
+- URL FIGMA : https://www.figma.com/design/syhd0DYW7578tK0aS82mEe/Maquette-VisSport_ethan-touitou?node-id=18-14&t=d2vg0ORGlBCbmHW2-1
 
 ## Sujet
 
