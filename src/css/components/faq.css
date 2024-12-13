@@ -1,0 +1,75 @@
+/* Section principale */
+.faq {
+    max-width: 800px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Titre */
+.section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #002855;
+    /* Bleu foncé */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Accordéon */
+.accordion {
+    border: 2px solid #007bff;
+    /* Bordure bleue */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
+}
+
+/* Élément de l'accordéon */
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+    /* Supprime la bordure pour le dernier élément */
+}
+
+/* Bouton d'en-tête */
+.accordion-header {
+    width: 100%;
+    padding: 15px;
+    background-color: #f5f9ff;
+    /* Fond bleu clair */
+    color: #002855;
+    /* Texte bleu foncé */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #e2f0ff;
+    /* Fond légèrement plus foncé au survol */
+}
+
+/* Contenu de l'accordéon */
+.accordion-content {
+    padding: 15px;
+    background-color: #fff;
+    /* Fond blanc */
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.6;
+    display: none;
+    /* Masqué par défaut */
+}
+
+/* Contenu visible */
+.accordion-content.active {
+    display: block;
+}

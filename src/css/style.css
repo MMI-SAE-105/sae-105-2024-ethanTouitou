@@ -12,6 +12,7 @@
 @import "components/billeterie.css";
 @import "components/locations.css";
 @import "components/acommodation.css";
+@import "components/faq.css";
 /* layout */
 @import "layout/header.css";
 @import "layout/footer.css";

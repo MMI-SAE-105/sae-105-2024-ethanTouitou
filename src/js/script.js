@@ -69,3 +69,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialisation des boutons
     updateButtons();
 });
+
+document.querySelectorAll('.accordion-header').forEach((button) => {
+    button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+
+        // Masquer tous les contenus d'accordéon
+        document.querySelectorAll('.accordion-content').forEach((item) => {
+            if (item !== content) {
+                item.classList.remove('active');
+                item.style.display = 'none';
+            }
+        });
+
+        // Afficher ou masquer le contenu cliqué
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+        } else {
+            content.style.display = 'block';
+        }
+    });
+});
