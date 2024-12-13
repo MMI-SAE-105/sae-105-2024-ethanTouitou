@@ -1,0 +1,66 @@
+/* Section principale */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Formulaire */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels */
+.form label {
+    font-size: 1rem;
+    color: #002855;
+    /* Bleu foncé */
+    font-weight: bold;
+}
+
+/* Champs de formulaire */
+.form input,
+.form textarea {
+    border: 2px solid #007bff;
+    /* Bordure bleue */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #444;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: #002855;
+    /* Bleu foncé lors du focus */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+    /* Ombre légère */
+}
+
+/* Bouton */
+.form-button {
+    background-color: #ffd700;
+    /* Jaune */
+    color: #000;
+    /* Texte noir */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    align-self: flex-end;
+    /* Place le bouton à droite */
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #e6be00;
+    /* Jaune légèrement plus foncé au survol */
+}

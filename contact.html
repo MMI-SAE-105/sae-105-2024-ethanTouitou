@@ -12,20 +12,67 @@
 
 <body class="home">
     <header class="main-header">
-        <h1 class="main-header__logo">VIS'SPORT</h1>
+        <h1 class="header__logo"><a href="index.html">Vis'Sport</a></h1>
         <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false">
             <span class="menu-btn__bar"></span>
         </button>
         <nav class="menu" id="mainNav" aria-hidden="true">
             <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="works.html">Works</a></li>
-                <li class="menu__item"><a class="menu__link" href="about.html">About</a></li>
-                <li class="menu__item"><a class="menu__link" href="contact.html">Contact</a></li>
-                <li class="menu__item"><a class="menu__link" href="team.html">Team</a></li>
+                <li class="menu__item"><a class="menu__link" href="index.html">Accueil</a></li>
+                <li class="menu__item"><a class="menu__link" href="programme.html">Programme de VisSport</a></li>
+                <li class="menu__item"><a class="menu__link" href="vissport.html">VisSport</a></li>
+                <li class="menu__item"><a class="menu__link" href="info.html">Info VisSport</a></li>
+
             </ul>
         </nav>
     </header>
+    <section class="section">
+        <h1 class="section-title with-line">Contact</h1>
+        <section class="section contact-form">
+            <form class="form" action="#" method="post">
+                <label for="firstname">Prénom</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Votre prénom" required>
 
+                <label for="lastname">Nom</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Votre nom" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+
+                <button type="submit" class="form-button">Envoyer</button>
+            </form>
+        </section>
+
+    </section>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <h1>VIS'SPORT</h1>
+            </div>
+            <div class="footer__left">
+                <p>A PROPOS</p>
+                <p>CONTACT</p>
+            </div>
+            <div class="footer__right">
+                <p><strong>ADRESSE</strong></p>
+                <p>Axone de Montbéliard</p>
+            </div>
+        </div>
+        <div class="footer__social">
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                <img src="/assets/icons/logoinstagram.png" alt="Instagram">
+            </a>
+            <a href="https://youtube.com" target="_blank" aria-label="Facebook">
+                <img src="assets/icons/logoyoutube.png" alt="Facebook">
+            </a>
+            <a href="https://linkedin.com" target="_blank" aria-label="Twitter">
+                <img src="assets/icons/vector.png" alt="Twitter">
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>
