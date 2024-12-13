@@ -22,3 +22,6 @@
 
 /*main */
 @import "base/main.css";
+
+/*page*/
+@import "pages/invite.css";
