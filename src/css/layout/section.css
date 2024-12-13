@@ -39,6 +39,20 @@
     /* Couleur du texte */
 }
 
+.section-paragraphe {
+    font-family: 'Roboto', sans-serif;
+    /* Police Roboto pour le texte */
+    font-size: 1rem;
+    /* Taille du texte */
+    line-height: 1.6;
+    /* Espacement entre les lignes */
+    margin-bottom: 30px;
+    /* Espace sous le paragraphe */
+    color: #002855;
+    /* Couleur du texte */
+    text-align: left;
+}
+
 /* Bouton sous forme de lien */
 .link-button {
     display: inline-block;
@@ -75,4 +89,30 @@
     /* Légère remontée au survol */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Ombre pour l'effet dynamique */
+}
+
+.section-title.with-line {
+    position: relative;
+    /* Permet d'ajouter une barre en pseudo-élément */
+    display: inline-block;
+    /* Pour ajuster la largeur de la barre au texte */
+    margin-bottom: 20px;
+    /* Espace entre le titre et le texte */
+    font-size: 1.5rem;
+    /* Taille du titre */
+}
+
+.section-title.with-line::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    /* Positionne la ligne en dessous */
+    transform: translateX(-50%);
+    width: 60%;
+    /* Longueur de la barre */
+    height: 2px;
+    /* Épaisseur de la barre */
+    background-color: #002855;
+    /* Couleur de la barre (bleu foncé) */
 }

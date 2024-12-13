@@ -1,0 +1,52 @@
+/* Section Objectifs */
+.objectives {
+    /* Espacement externe et centrage */
+    max-width: auto;
+    /* Limite la largeur */
+    font-family: 'Roboto', sans-serif;
+    /* Police générale */
+    background-color: #fff;
+    /* Fond blanc */
+    color: #000;
+    /* Couleur du texte noir */
+}
+
+/* Titre de la section */
+.objectives-title {
+    font-size: 1.5rem;
+    /* Taille du titre */
+    font-weight: bold;
+    /* Gras pour le titre */
+    margin-bottom: 15px;
+    /* Espace sous le titre */
+    color: #000;
+    /* Couleur noire */
+}
+
+/* Liste des objectifs */
+.objectives-list {
+    list-style-type: disc;
+    /* Utilise des puces */
+    padding-left: 20px;
+    /* Indentation pour les puces */
+    margin: 0;
+    font-size: 1rem;
+    /* Taille du texte */
+    line-height: 1.6;
+    /* Espacement entre les lignes */
+    text-align: left;
+}
+
+/* Style des éléments de la liste */
+.objectives-list li {
+    margin-bottom: 15px;
+    /* Espace entre les éléments */
+}
+
+/* Texte en gras pour les catégories */
+.objectives-list strong {
+    font-weight: bold;
+    /* Met en évidence les mots clés */
+    color: #000;
+    /* Couleur noire */
+}
