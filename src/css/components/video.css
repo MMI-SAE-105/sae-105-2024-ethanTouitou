@@ -1,0 +1,26 @@
+/* Conteneur responsive pour la vidéo */
+.video-container {
+    position: relative;
+    width: 100%;
+    /* S'adapte à la largeur du parent */
+    padding-bottom: 56.25%;
+    /* Hauteur proportionnelle (16:9) */
+    overflow: hidden;
+    background-color: #000;
+    /* Optionnel : arrière-plan noir pour les vidéos */
+    border-radius: 8px;
+    /* Coins arrondis optionnels */
+}
+
+/* Style pour l'iframe */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Remplit le conteneur */
+    height: 100%;
+    /* Respecte le ratio */
+    border: none;
+    /* Supprime la bordure */
+}
