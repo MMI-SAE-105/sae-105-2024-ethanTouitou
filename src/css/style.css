@@ -10,6 +10,8 @@
 @import "components/team.css";
 @import "components/video.css";
 @import "components/billeterie.css";
+@import "components/locations.css";
+@import "components/acommodation.css";
 /* layout */
 @import "layout/header.css";
 @import "layout/footer.css";
